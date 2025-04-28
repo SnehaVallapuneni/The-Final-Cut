@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { StarRatingComponent } from '../feature/star-rating/star-rating.component';
 import { HeaderComponent } from "../header/header.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-movie',
   standalone: true,
-  imports: [StarRatingComponent, HeaderComponent],
+  imports: [StarRatingComponent, HeaderComponent, CommonModule],
   templateUrl: './movie.component.html',
   styleUrl: './movie.component.css'
 })
